@@ -1,0 +1,98 @@
+title: Home
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+    disableXML: true
+
+menu:
+    main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Blogs
+          url: blogs/
+          weight: 10
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production
+    defaultTheme: auto
+    ShowShareButtons: true
+    ShowReadingTime: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    homeInfoParams:
+        Title: "Feruzjon Muyassarov"
+        Content: >
+            Welcome to my personal website.
+
+            - You can find my blog posts here.
+
+            - Feel free to drop me a message on ....
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/fmuyassarov"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/feruzjon-muyassarov/"
+
+    editPost:
+        URL: "https://github.com/fmuyassarov/fmuyassarov.github.io"
+        Text: "Suggest Changes"
+        appendFilePath: true
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+# privacy:
+#     vimeo:
+#         disabled: false
+#         simple: true
+
+#     twitter:
+#         disabled: false
+#         enableDNT: true
+#         simple: true
+
+#     instagram:
+#         disabled: false
+#         simple: true
+
+#     youtube:
+#         disabled: false
+#         privacyEnhanced: true
+
+# services:
+#     instagram:
+#         disableInlineCSS: true
+#     twitter:
+#         disableInlineCSS: true
