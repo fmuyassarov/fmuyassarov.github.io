@@ -1,0 +1,40 @@
+name: Personal blob post
+
+on:
+  push:
+    paths-ignore:
+      - 'themes/**'
+      - 'images/**'
+      - 'LICENSE'
+      - 'README.md'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Download the hugo-papermod theme as submodule
+        run: git submodule update --init --recursive
+
+      - name: Update the theme
+        run: git submodule update --remote --merge
+
+      - name: Install hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build the website
+        run: hugo --buildDrafts --gc --verbose --minify
+
+      - name: Deploy the website from he public dir
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./public
