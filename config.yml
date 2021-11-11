@@ -27,7 +27,7 @@ menu:
           url: blogs/
           weight: 10
         - name: Home
-          url: https://fmuyassarov.github.io
+          url: /
           weight: 10
 
 outputs:
