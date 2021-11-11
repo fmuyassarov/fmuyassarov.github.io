@@ -1,7 +1,7 @@
 ---
 title: "Prow with Azure cloud storage"
-date: "2019-03-11"
-summary: "How to setup a prow."
+date: "2021-10-09"
+summary: "How to setup a prow with Azure blob storage."
 weight: 5
 ---
 
