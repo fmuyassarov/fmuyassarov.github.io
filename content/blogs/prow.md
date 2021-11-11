@@ -1,13 +1,16 @@
 ---
-title: "Prow with Azure cloud storage"
+title: "Kubernetes Prow with Azure blob storage"
 date: "2021-10-09"
-summary: "How to setup a prow with Azure blob storage."
+tags: ["metal3"]
+summary: "How to setup a Prow with Azure blob storage."
+ShowToc: true
 weight: 5
 ---
 
-Recently I had to build a Prow cluster for one of the projects I was working on. Usually you want to configure Prow to store job artifacts in some cloud storage so that people could access those logs later on. In my case, Azure cloud was the only option to go with. Unfortunately, at the time of writing this post Prow doesn't support Azure as storage backed and only GCP or AWS S3.
+Recently I had to build a [Kubernetes Prow](https://github.com/kubernetes/test-infra/tree/master/prow) CICD system for one of the projects I was working on. Usually you want to store Prow job artifacts in some cloud storage so that they are available for future
+use debugging. In my case, Azure cloud was the only option to go with. Unfortunately, at the time of writing this post Prow doesn't support Azure as a storage backed and only GCP or AWS S3.
 
-However, thanks to [MinIO](https://github.com/minio/minio), I could build my Prow cluster and still store the job artifacts in Azure storage as I would in GCP or AWS S3. So I wanted to share how I configured my Prow cluster to work with Azure storage.
+However, thanks to [MinIO](https://github.com/minio/minio), I could build my Prow CICD cluster and still store the job artifacts in Azure storage as I would in GCP or AWS S3. For that reason, I wanted to share how I configured my Prow cluster to work with Azure storage.
 
 **Note:** This is Prow setup in a local test environment. In other words, there is no TLS, cert-manager, ingress controller configuration involved as they would in real setup.
 

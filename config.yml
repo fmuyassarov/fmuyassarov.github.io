@@ -1,4 +1,5 @@
-title: Home
+baseURL: "https://adityatelange.github.io/hugo-PaperMod/"
+title: Blog posts
 paginate: 5
 theme: hugo-PaperMod
 
@@ -49,11 +50,15 @@ params:
     homeInfoParams:
         Title: "Feruzjon Muyassarov"
         Content: >
-            👋Hi there! Welcome to my personal website.
+            - Hi there! I'm Feruzjon Muyassarov, or @fmuyassarov on the internet.
 
-            - You can find my blog posts here.
+            - I'm a software developer and currently working on [**Metal3.io**](https://github.com/metal3-io) project.
 
-            - Feel free to drop me a message on ....
+            - I'm a fan of table tennis, yes ping-pong. Always open for open
+
+            - tournaments or even just to play it for fun.
+
+            - I live in Finland, close to the [**Arctic circle**](https://en.wikipedia.org/wiki/Arctic_Circle).
 
     socialIcons:
         - name: github
@@ -75,27 +80,3 @@ markup:
     goldmark:
         renderer:
             unsafe: true
-
-# privacy:
-#     vimeo:
-#         disabled: false
-#         simple: true
-
-#     twitter:
-#         disabled: false
-#         enableDNT: true
-#         simple: true
-
-#     instagram:
-#         disabled: false
-#         simple: true
-
-#     youtube:
-#         disabled: false
-#         privacyEnhanced: true
-
-# services:
-#     instagram:
-#         disableInlineCSS: true
-#     twitter:
-#         disableInlineCSS: true
