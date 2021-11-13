@@ -65,6 +65,8 @@ params:
           url: "https://github.com/fmuyassarov"
         - name: linkedin
           url: "https://www.linkedin.com/in/feruzjon-muyassarov/"
+        - name: twitter
+          url: "https://twitter.com/fmuyassarov"
 
     editPost:
         URL: "https://github.com/fmuyassarov/fmuyassarov.github.io"
