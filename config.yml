@@ -1,4 +1,4 @@
-baseURL: "https://adityatelange.github.io/hugo-PaperMod/"
+baseURL: "https://fmuyassarov.github.io/"
 title: Blog posts
 paginate: 5
 theme: hugo-PaperMod
@@ -16,16 +16,16 @@ minify:
 menu:
     main:
         - name: Archive
-          url: archives
+          url: https://fmuyassarov.github.io/archives/
           weight: 5
         - name: Search
-          url: search/
+          url: 
           weight: 10
         - name: Tags
-          url: tags/
+          url: https://fmuyassarov.github.io/tags/
           weight: 10
         - name: Blogs
-          url: blogs/
+          url: https://fmuyassarov.github.io/blogs/
           weight: 10
         - name: Home
           url: /
