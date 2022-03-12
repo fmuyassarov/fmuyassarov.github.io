@@ -18,9 +18,6 @@ menu:
         - name: Archive
           url: https://fmuyassarov.github.io/archives/
           weight: 5
-        - name: Search
-          url: 
-          weight: 10
         - name: Tags
           url: https://fmuyassarov.github.io/tags/
           weight: 10
@@ -52,19 +49,17 @@ params:
         Content: >
             - Hi there! I'm Feruzjon Muyassarov, or @fmuyassarov on the internet.
 
-            - I'm a software developer and currently working on [**Metal3.io**](https://github.com/metal3-io) project.
-
-            - I'm a fan of table tennis, yes ping-pong. Always open for open
-
-            - tournaments or even just to play it for fun.
-
-            - I live in Finland, close to the [**Arctic circle**](https://en.wikipedia.org/wiki/Arctic_Circle).
+            - I am a cloud orchestration developer at Intel, focusing on Kubernetes resource management
 
     socialIcons:
         - name: github
           url: "https://github.com/fmuyassarov"
         - name: linkedin
           url: "https://www.linkedin.com/in/feruzjon-muyassarov/"
+        - name: credly
+          url: "https://www.credly.com/users/fmuyassarov"
+        - name: youtube
+          url: "https://www.youtube.com/@fmuyassarov"
         - name: twitter
           url: "https://twitter.com/fmuyassarov"
 
